@@ -3,8 +3,7 @@ kind: NetworkPolicy
 metadata:
   name: default-deny
   namespace: roboshop
-spec:
-  # denying all incoming requests including with in roboshop namespace
-  podselector: {} # all pods in roboshop namespace
+spec:  # denying all incoming requests including with in roboshop namespace
+  podSelector: {} # all pods in roboshop namespace
   policyTypes:
     - Ingress 
